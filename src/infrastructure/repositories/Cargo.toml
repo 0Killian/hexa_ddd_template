@@ -1,0 +1,11 @@
+[package]
+name = "repositories"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sqlx = { version = "0.8.2", features = ["runtime-tokio", "tls-rustls", "postgres", "uuid", "time", "rust_decimal"] }
+uuid = { version = "1.11.0", features = ["v7"] }
+common = { path = "../../core/libs/common" }
+entities = { path = "../../core/entities" }
+tracing = "0.1.40"

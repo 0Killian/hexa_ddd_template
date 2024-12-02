@@ -1,0 +1,12 @@
+[package]
+name = "front"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+yew = { version = "0.21.0", features = ["ssr"] }
+axum = "0.7.9"
+uuid = { version = "1.11.0", features = ["v7"] }
+common = { path = "../../../core/libs/common/" }
+ui = { path = "../../../core/libs/ui/" }
+entities = { path = "../../../core/entities" }

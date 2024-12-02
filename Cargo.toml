@@ -1,0 +1,14 @@
+[workspace]
+members = [
+	"src/main",
+	"src/interface/http/front",
+	"src/interface/http/api",
+	"src/interface/http/server",
+	"src/core/libs/common",
+	"src/core/libs/ui",
+	"src/core/entities",
+	"src/infrastructure/repositories",
+	"src/core/libs/adapters",
+	"src/core/libs/errors",
+]
+resolver = "2"

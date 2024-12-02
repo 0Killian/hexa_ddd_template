@@ -1,0 +1,10 @@
+[package]
+name = "entities"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+time = "0.3.36"
+uuid = { version = "1.11.0", features = ["v7"] }
+serde = { version = "1.0.215", features = ["derive"] }
+errors = { path = "../libs/errors" }

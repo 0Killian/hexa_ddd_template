@@ -1,0 +1,22 @@
+{
+  "name": "net-dashboard",
+  "private": true,
+  "version": "1.0.0",
+  "license": "ISC",
+  "scripts": {
+    "tailwind:dev": "tailwindcss -i main.css -o assets/main.css --watch",
+    "tailwind:build": "tailwindcss -i main.css -o assets/main.css --minify"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.8"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.4.14",
+    "@tailwindcss/forms": "^0.5.9",
+    "@tailwindcss/typography": "^0.5.15",
+    "toml": "^3.0.0",
+    "@eslint/js": "^9.13.0",
+    "globals": "^15.11.0"
+  }
+}

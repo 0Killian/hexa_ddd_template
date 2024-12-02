@@ -1,0 +1,11 @@
+[package]
+name = "errors"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+thiserror = "2.0.3"
+serde = { version = "1.0.215", features = ["derive"] }
+sqlx = "0.8.2"
+axum = "0.7.9"
+tracing = "0.1.41"
