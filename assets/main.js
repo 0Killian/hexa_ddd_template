@@ -21,38 +21,3 @@ htmx.on('htmx:afterRequest', function (event) {
 htmx.on('htmx:configRequest', function(evt) {
     evt.detail.headers['Accept'] = 'text/html';
 });
-
-/// helpers
-/* exported qs, qss, onClickOutside, removeInputWhitespaces */
-
-/**
-  * @param {string} selector - html selector.
-  * @returns {HTMLElement}
-  */
-function qs(selector) {
-  return document.querySelector(selector)
-}
-/**
-* @param {string} selector - html selector.
-* @returns {HTMLElement[]}
-*/
-function qss(selector) {
-  return [...document.querySelectorAll(selector)]
-}
-
-function onClickOutside(element, f) {
-  document.addEventListener('click', event => {
-    if (!element.contains(event.target)) {
-      f(event);
-    }
-  });
-}
-
-/**
-* @param {string} selector - html selector.
-*/
-function removeInputWhitespaces(selector) {
-  document.querySelector(selector).addEventListener("change", function () {
-    this.value = this.value.replace(/\s+/g, '');
-  })
-}
