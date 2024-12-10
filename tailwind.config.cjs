@@ -17,9 +17,6 @@ module.exports = {
       colors: {
         ...colors,
       },
-      backgroundImage: {
-        wireframe_card: "url('/assets/wireframe_card_background.svg')",
-      },
     },
   },
   plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
